@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main() {
+    char str[] = "Hello, World!";
+    int size = sizeof(str) / sizeof(str[0]) - 1; // Exclude null terminator
+
+    printf("Original string: %s\n", str);
+    reverseString(str, size);
+    printf("Reversed string: %s\n", str);
+
+    return 0;
+}
